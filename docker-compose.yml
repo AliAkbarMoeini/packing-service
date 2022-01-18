@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: strongPassword
+      POSTGRES_DB: packing_challenge
+    ports:
+      - "5432:5432"
